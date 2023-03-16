@@ -2,8 +2,7 @@
 
 /**
  * main - main block
- *
- * Return:0 on success
+ * Return:0 
  */
 
 int main(void)
