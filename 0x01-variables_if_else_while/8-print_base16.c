@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Return - Always 0 when successful
+ * Return - Always 0 (success)
  */
 
 
