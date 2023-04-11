@@ -9,24 +9,26 @@
  */
 
 char *_strdup(char *str)
-
 {
 	char *loc;
-	unsigned int a, b;
+	int a, b;
 
 	if (str == NULL)
 	return (NULL);
-	
-	for (a = 0; str[a] != '\0'; a++)
-		;
 
-	loc = (char *)malloc(sizeof(char) * (a+1));
+	for (a = 0; str[a]; a++)
+		b++;
+	loc = malloc(sizeof(char) * (b + 1));
 
 	if (loc == NULL)
 	return (NULL);
 
-	for (a = 0; a < 1; b++)
-	loc[b] = str[b];
-	
+	for (a = 0; str[a]; a++)
+	{
+	loc[a] = str[a];
+	}
+
+	loc[b] = '\0';
+
 	return (loc);
 }
