@@ -11,43 +11,43 @@
 
 char *argstostr(int ac, char **av)
 {
-	char *moose;
-	int k, a, b, ib;
+	char *aout;
+	int c, i, j, ia;
 
 	if (ac == 0)
 		return (NULL);
 
-	for (k = a = 0; a < ac; a++)
+	for (c = i = 0; i < ac; i++)
 	{
-		if (av[a] == NULL)
+		if (av[i] == NULL)
 		return (NULL);
 
-		for (b = 0; av[a][b] != '\0'; b++)
-		
-		k++;
+		for (j = 0; av[i][j] != '\0'; j++)
+			c++;
+		c++;
 	}
 
-	moose = malloc((k + 1) * sizeof(char));
+	aout = malloc((c + 1) * sizeof(char));
 
-	if (moose == NULL)
+	if (aout == NULL)
 	{
-		free(moose);
+		free(aout);
 		return (NULL);
 	}
 
-	for (a = b = ib = 0; ib < k; b++, ib++)
+	for (i = j = ia = 0; ia < c; j++, ia++)
 	{
-		if (av[a][b] == '\0')
+		if (av[i][j] == '\0')
 		{
-			moose[ib] = '\n';
-			a++;
-			ib++;
-			b = 0;
+		aout[ia] = '\n';
+		i++;
+		ia++;
+		j = 0;
 		}
-		if (ib < k - 1)
-		moose[ib] = av[a][b];
+	if (ia < c - 1)
+	aout[ia] = av[i][j];
 	}
-	moose[ib] = '\0';
+	aout[ia] = '\0';
 
-	return (moose);
+	return (aout);
 }
