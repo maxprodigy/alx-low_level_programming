@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array: creates an array of chars,
- * and initialize it with a specific char.
+ * create_array: creates an array of chars
  * @size: array size
  * @c: character stored
  * Return: NULL if it fails or if size is zero
