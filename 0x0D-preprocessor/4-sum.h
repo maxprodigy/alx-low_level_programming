@@ -1,5 +1,5 @@
-#ifndef _SUM_MACRO
-#define _SUM_MACRO
+#ifndef _SUM_MACRO_
+#define _SUM_MACRO_
 
 #define SUM(x,y) ((x) + (y))
 
