@@ -4,11 +4,11 @@
 #include "3-calc.h"
 
 /**
- * main -  main body
- * @argc: code executioner
- * @argv: code runner
+ * main - check the code.
+ * @argc: argument count.
+ * @argv: argument vector.
  *
- * Return: 0 when successful
+ * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
