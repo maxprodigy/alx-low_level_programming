@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include "list.h"
 
 void __attribute__((constructor)) hare(void);
 
 /**
  * hare - Prints a string before the
  * main function is executed.
+ *
+ * Return; No return
  */
 
 void hare(void)
