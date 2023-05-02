@@ -16,6 +16,6 @@ while (current)
 {
 	meat = current->next;
 	free(current);
-	current = next;
+	current = meat;
 }
 }
