@@ -9,11 +9,13 @@
 
 void free_listint(listint_t *head)
 {
-listint_t *meat;
+listint_t *current, *meat;
 
-while ((meat = head) != NULL)
+current = head;
+while (current)
 {
-	meat = head->next;
-	free(meat);
+	meat = current->next;
+	free(current);
+	current = next;
 }
 }
